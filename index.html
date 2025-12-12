@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <button class="brand" data-scroll="hero">Portfolio</button>
+        <div class="nav-links">
+          <button data-scroll="about">About</button>
+          <button data-scroll="skills">Skills</button>
+          <button data-scroll="services">Services</button>
+          <button data-scroll="projects">Projects</button>
+          <button data-scroll="contact">Contact</button>
+        </div>
+        <button class="menu-btn" id="menu-toggle" aria-label="Toggle navigation">
+          <i data-lucide="menu"></i>
+        </button>
+      </nav>
+      <div class="mobile-menu" id="mobile-menu">
+        <button data-scroll="about">About</button>
+        <button data-scroll="skills">Skills</button>
+        <button data-scroll="services">Services</button>
+        <button data-scroll="projects">Projects</button>
+        <button data-scroll="contact">Contact</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="container">
+        <div class="hero-card">
+          <h1 class="hero-title">Hi, I'm <span style="color: var(--blue-600);">Princess Myre</span></h1>
+          <h2 class="hero-sub">A passionate Designer</h2>
+          <p class="hero-text">
+            Specializing in Photo Editing, Video Editing, and Graphic Design. I create clean, creative, and meaningful visuals using tools like Canva, Photoshop, and CapCut.
+          </p>
+
+          <div class="icon-row">
+            <a class="icon-btn icon-dark" href="https://github.com/princessmyreb-ui" target="_blank" rel="noopener">
+              <i data-lucide="github"></i>
+            </a>
+            <a class="icon-btn icon-blue" href="https://www.facebook.com/myre.cardeno" target="_blank" rel="noopener">
+              <i data-lucide="facebook"></i>
+            </a>
+            <a class="icon-btn icon-light" href="mailto:princessmyreb@gmail.com">
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+
+          <button class="learn-more" data-scroll="about">
+            <span>Learn more</span>
+            <i data-lucide="arrow-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="background:#fff;">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="grid two-col" style="align-items:center; margin-top: 32px;">
+          <div style="display:flex; justify-content:center;">
+            <div class="about-img-wrap">
+              <img src="assets/Profile.jpg" alt="Princess Myre" class="about-img">
+            </div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:18px;">
+            <p>
+              I'm a creative designer who focuses on producing visually appealing and engaging content. Whether it's photo enhancement, layout design, short-form videos, or branding materials, I make sure every output is polished, impactful, and tailored to the client's needs.
+            </p>
+            <div class="grid" style="gap:16px; margin-top: 12px;">
+              <div class="list-item">
+                <span class="icon-pill" style="background:var(--blue-100);"><i data-lucide="palette" style="color:var(--blue-600);"></i></span>
+                <div>
+                  <h3 style="margin:0 0 4px;">Creative Visuals</h3>
+                  <p>Producing clean, creative, and meaningful designs</p>
+                </div>
+              </div>
+              <div class="list-item">
+                <span class="icon-pill" style="background:var(--purple-100);"><i data-lucide="palette" style="color:var(--purple-600);"></i></span>
+                <div>
+                  <h3 style="margin:0 0 4px;">Client-Focused</h3>
+                  <p>Tailored designs that meet your specific needs</p>
+                </div>
+              </div>
+              <div class="list-item">
+                <span class="icon-pill" style="background:var(--green-100);"><i data-lucide="zap" style="color:var(--green-600);"></i></span>
+                <div>
+                  <h3 style="margin:0 0 4px;">Polished Output</h3>
+                  <p>Every project is refined and impactful</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" style="background: var(--slate-50);">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; Expertise</h2>
+        <p class="section-sub">Technologies and tools I work with to bring ideas to life</p>
+        <div class="grid three-col skills-grid">
+          <div class="card">
+            <h3 style="margin-bottom: 18px;">Design &amp; Editing Tools</h3>
+            <div class="skill-row">
+              <div class="skill-head"><span>Canva</span><span>95%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="95"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-head"><span>Adobe Photoshop</span><span>90%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="90"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-head"><span>CapCut</span><span>88%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="88"></div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-bottom: 18px;">Office Tools</h3>
+            <div class="skill-row">
+              <div class="skill-head"><span>MS Word</span><span>90%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="90"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-head"><span>MS Excel</span><span>85%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="85"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-head"><span>MS PowerPoint</span><span>92%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="92"></div></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-bottom: 18px;">Specialties</h3>
+            <div class="skill-row">
+              <div class="skill-head"><span>Photo Editing</span><span>95%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="95"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-head"><span>Video Editing</span><span>90%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="90"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-head"><span>Layout &amp; Graphic Design</span><span>93%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="93"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-head"><span>Branding Materials</span><span>88%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="88"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-head"><span>Social Media Content</span><span>90%</span></div>
+              <div class="progress"><div class="progress-bar" data-progress="90"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" style="background:#fff;">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p class="section-sub">Professional design services tailored to your needs</p>
+        <div class="grid three-col">
+          <div class="service-card">
+            <div class="icon-pill" style="background:var(--blue-100);"><i data-lucide="image" style="color:var(--blue-600);"></i></div>
+            <h3 style="margin:16px 0 8px;">Photo Retouching &amp; Enhancement</h3>
+            <p>Professional photo editing to enhance colors, remove blemishes, and perfect every detail.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon-pill" style="background:var(--purple-100);"><i data-lucide="palette" style="color:var(--purple-600);"></i></div>
+            <h3 style="margin:16px 0 8px;">Logo &amp; Graphic Design</h3>
+            <p>Custom logos and graphics that capture your brand identity and vision.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon-pill" style="background:var(--red-100);"><i data-lucide="film" style="color:var(--red-600);"></i></div>
+            <h3 style="margin:16px 0 8px;">Video Editing</h3>
+            <p>Create engaging Reels, Promo Videos, and Shorts that captivate your audience.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon-pill" style="background:var(--green-100);"><i data-lucide="layout" style="color:var(--green-600);"></i></div>
+            <h3 style="margin:16px 0 8px;">Layout Design</h3>
+            <p>Eye-catching flyers, posters, and banners for any occasion or event.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon-pill" style="background:var(--orange-100);"><i data-lucide="file-text" style="color:var(--orange-600);"></i></div>
+            <h3 style="margin:16px 0 8px;">Presentation Design</h3>
+            <p>Professional presentations that communicate your message effectively.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon-pill" style="background:var(--pink-100);"><i data-lucide="share-2" style="color:var(--pink-600);"></i></div>
+            <h3 style="margin:16px 0 8px;">Social Media Content</h3>
+            <p>Engaging content designed specifically for social media platforms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="background:#fff;">
+      <div class="container">
+        <h2 class="section-title">Featured Output</h2>
+        <p class="section-sub">Showcasing my recent design and editing work</p>
+        <div class="grid two-col">
+          <div class="project-card">
+            <div class="project-media">
+              <iframe src="https://drive.google.com/file/d/1WrQ1FTiyVlEKYMCNu7RuJpNo_6YmOD35/preview" allow="autoplay" title="Video Editing - CapCut" style="width:100%; height:100%; border:0;"></iframe>
+            </div>
+            <div style="padding: 20px;">
+              <h3 style="margin-bottom:8px;">Video Editing - CapCut</h3>
+              <p style="margin-bottom:14px;">Professional video editing showcasing creative transitions, effects, and storytelling. Created using CapCut with attention to pacing and visual appeal.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+                <span class="tag">CapCut</span>
+                <span class="tag">Video Editing</span>
+                <span class="tag">Motion Graphics</span>
+              </div>
+              <a href="https://drive.google.com/file/d/1WrQ1FTiyVlEKYMCNu7RuJpNo_6YmOD35/view?usp=drive_link" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; color:var(--blue-600); font-weight:600;">
+                <i data-lucide="play"></i>
+                <span>View Full</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-media" style="display:flex; align-items:center; justify-content:center; background:#fff;">
+              <img src="assets/Amaranth Greens.png" alt="Infographic Design - Amaranth Greens" style="width:100%; height:100%; object-fit:contain;">
+            </div>
+            <div style="padding: 20px;">
+              <h3 style="margin-bottom:8px;">Infographic Design - Amaranth Greens</h3>
+              <p style="margin-bottom:14px;">Clean and informative infographic design showcasing nutrients from Amaranth Greens in a visually engaging way with beautiful typography and layout.</p>
+              <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+                <span class="tag">Graphic Design</span>
+                <span class="tag">Infographic</span>
+                <span class="tag">Visual Communication</span>
+              </div>
+              <a href="https://drive.google.com/file/d/1gbt471WfYbb_DKxaTrQIi_29OzlzDfZq/view?usp=drive_link" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; color:var(--blue-600); font-weight:600;">
+                <i data-lucide="external-link"></i>
+                <span>View Full</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="background: var(--slate-50);">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+        <div class="grid contact-grid">
+          <div class="card" style="background:#fff;">
+            <h3 style="margin-bottom:18px;">Contact Information</h3>
+            <div class="list-item" style="margin-bottom:14px;">
+              <span class="icon-pill" style="background:var(--blue-100);"><i data-lucide="mail" style="color:var(--blue-600);"></i></span>
+              <div>
+                <p>Email</p>
+                <a href="mailto:princessmyreb@gmail.com" style="font-weight:600; color:var(--slate-900);">princessmyreb@gmail.com</a>
+              </div>
+            </div>
+            <div class="list-item" style="margin-bottom:14px;">
+              <span class="icon-pill" style="background:var(--green-100);"><i data-lucide="phone" style="color:var(--green-600);"></i></span>
+              <div>
+                <p>Phone</p>
+                <a href="tel:+639362133902" style="font-weight:600; color:var(--slate-900);">09362133902</a>
+              </div>
+            </div>
+            <div class="list-item" style="margin-bottom:18px;">
+              <span class="icon-pill" style="background:var(--purple-100);"><i data-lucide="map-pin" style="color:var(--purple-600);"></i></span>
+              <div>
+                <p>Location</p>
+                <p style="font-weight:600; color:var(--slate-900);">General Santos City, Philippines</p>
+              </div>
+            </div>
+            <div class="card" style="background:var(--blue-50); padding:16px; box-shadow:none; margin-top:10px;">
+              <p>I'm currently available for freelance design work and exciting new projects. Let's create something beautiful together!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <form id="contact-form">
+              <div style="margin-bottom:14px;">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div style="margin-bottom:14px;">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+              <div style="margin-bottom:14px;">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <button type="submit" class="btn" style="width:100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
